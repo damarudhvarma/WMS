@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WMS - Waste Management Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://proton-resources-production.imgix.net/04988150e42d25068d57d4d849158b1c18f6832a5f2911f032799c254892a8d4.png?auto=compress">
+</head>
+<body>
+    <div id="app">
+        <!-- Loading State -->
+        <div id="loadingScreen" class="loading-screen hidden">
+            <div class="loader"></div>
+        </div>
+
+       <!-- User Selection Page -->
+<div id="userSelectionPage" class="container page" data-page="selection">
+    <div class="centered-container">
+        <div class="rounded-box">
+            <img src="https://proton-resources-production.imgix.net/04988150e42d25068d57d4d849158b1c18f6832a5f2911f032799c254892a8d4.png?auto=compress" 
+                 alt="IRecycle Logo" 
+                 class="main-logo animate-fade-in">
+            <h1 class="logo gradient-text">WMS</h1>
+            <div class="button-container">
+                <button class="btn user-btn requester-btn" data-user-type="requester">
+                    <span class="btn-icon">🏠</span>
+                    REQUESTER
+                </button>
+                <button class="btn user-btn collector-btn" data-user-type="collector">
+                    <span class="btn-icon">🚛</span>
+                    COLLECTOR
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelector(".requester-btn").addEventListener("click", function() {
+        window.location.href = "http://localhost:3000";
+    });
+
+    document.querySelector(".collector-btn").addEventListener("click", function() {
+        window.location.href = "http://localhost:3002";
+    });
+</script>
+
+      
+
+</body>
+</html>

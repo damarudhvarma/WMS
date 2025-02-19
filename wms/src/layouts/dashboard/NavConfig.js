@@ -32,7 +32,7 @@ const navConfig = [
     icon: getIcon('mdi:trash-can'),
   },
   // {
-  //   title: 'register',
+  //   title: 'register',nav
   //   path: '/register',
   //   icon: getIcon('eva:person-add-fill'),
   // },
